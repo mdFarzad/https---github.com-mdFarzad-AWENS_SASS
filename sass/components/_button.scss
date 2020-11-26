@@ -1,0 +1,64 @@
+/*******************************************************Customized Button CSs*******************************************************/
+.customizedButton {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        transition: all .2s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba($color-black, .2);
+        background-color: $secondary-blue;
+        color: $color-white !important;
+        cursor: pointer;
+
+        &::after {
+            transform: scaleX(1.2) scaleY(1.3);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 5px rgba($color-black, .2);
+    }
+
+    &-white {
+
+        @include buttonPrimaryEffect($color-white, $primary-blue);
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &-blue {
+
+        @include buttonPrimaryEffect($primary-blue, $color-white);
+
+        &-pipeLineButton {
+            width: 250px;
+            height: 50px;
+            padding: 0;
+        }
+
+        &::after {
+            background-color: $primary-blue;
+        }
+    }
+
+    &::after {
+        //@mixin afterButtonEffect($radius)
+        @include afterButtonEffect(0em);
+    }
+
+    &-animated {
+        animation: moveUp 1s ease-out .5s;
+        animation-fill-mode: backwards;
+
+    }
+}

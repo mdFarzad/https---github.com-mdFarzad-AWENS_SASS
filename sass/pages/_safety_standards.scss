@@ -1,0 +1,21 @@
+.safetyStandard {
+    .fa-plus {
+        font-size: 200px !important;
+    }
+}
+
+#ourPlan {
+    .planList {
+        li {
+            list-style: disc inside;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .safetyStandard {
+        .fa-plus {
+            font-size: 90px !important;
+        }
+    }
+}

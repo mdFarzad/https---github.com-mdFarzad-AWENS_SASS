@@ -1,0 +1,91 @@
+/**************************************************Carousel Css******************************************************/
+
+
+.testimonial {
+    display: block;
+
+
+    .carousel {
+        margin-top: 0%;
+        padding-top: 0%;
+        height: 500px;
+        cursor: pointer;
+
+        .indicators {
+            display: none;
+        }
+
+        .carousel-item {
+            height: 80%;
+            width: 40%;
+
+            .home-testimonials,
+            .home-testimonials2 {
+                font-size: 1rem;
+                padding: 10%;
+            }
+
+            .home-testimonials2 {
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1200px) {
+
+    .testimonial {
+        display: block;
+
+        .carousel {
+            margin-top: 0%;
+            padding-top: 0%;
+            height: 500px;
+
+            .carousel-item {
+                height: 80%;
+                width: 400px;
+                padding: 5%;
+            }
+
+        }
+    }
+}
+
+
+
+@media(max-width: 600px) {
+
+    .testimonial {
+        display: block;
+
+        .carousel {
+
+            height: 400px;
+
+            .carousel-item {
+                width: 110%;
+                height: 90%;
+
+                .home-testimonials {
+
+                    padding: 10%;
+                }
+
+                .home-testimonials-1,
+                .home-testimonials-4,
+                .home-testimonials-3,
+                .home-testimonials-5 {
+                    margin: 10% auto;
+                }
+
+                .ht2 {
+                    margin-top: 0;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/*******************Layout css******************/
+#LearningSolutionSection {
+    padding: 20px 0;
+
+    .learning-solutions {
+        .redirects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 50px auto;
+
+            .pageRedirect {
+                text-align: center;
+                margin: auto;
+                background-color: $pageRedirect-color;
+                width: 8em;
+                height: 6em;
+                border-radius: 1rem;
+                transition: .2s all;
+                color: black;
+
+                &:active {
+                    transform: translateY(-1px);
+                    box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+                }
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+                }
+
+                &-icons {
+                    margin-top: 15%;
+                }
+
+                .link-label {
+                    font-size: $links-size;
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:600px) {
+    .pageRedirect {
+        margin-top: 10px !important;
+    }
+}

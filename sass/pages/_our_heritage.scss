@@ -1,0 +1,242 @@
+.heritage {
+    position: relative;
+
+    .parallax-container {
+        .parallax {
+            z-index: 1 !important;
+
+            .par-pic {
+                display: block !important;
+
+            }
+
+            .parallax-overlay {
+                background-color: rgba(0, 0, 0, 0.92);
+                position: absolute;
+
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+
+
+    }
+
+    .heritageTop {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        top: 0;
+        //    left: 25%;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+
+        .heritageTop-container {
+            display: inline-flex;
+            flex-direction: row;
+            margin: auto;
+
+            .timelineLogo {
+                width: 250px;
+                height: 200px;
+
+                img {
+
+                    //  width: 100% !important;
+                    height: 200px;
+                    //z-index: 999999;
+
+                    object-fit: contain;
+                }
+            }
+
+            .timeLineHeaderDiv {
+                .timelineHeader {
+                    color: $primary-yellow;
+                }
+            }
+        }
+    }
+}
+
+.history {
+    width: 100%;
+
+    .slick-arrow:before {
+        color: rgba(0, 0, 0, 0.42) !important;
+    }
+
+    .yearDescription {
+        width: 80% !important;
+        margin: 0 auto;
+        padding: 30px;
+        transform: skewX(-7deg);
+        background-color: rgba($primary-grey, .8);
+
+
+        & > * {
+            transform: skewX(7deg);
+        }
+
+        /*  .yearDescGroup {
+            width: 60%;
+        }*/
+
+
+
+        .flow-text {
+            font-size: 1rem;
+
+        }
+
+
+    }
+
+    .two-partitions {
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        .yearDescGroupImage {
+            img {
+                //  position: absolute;
+                //top: 0;
+                // right: 0;
+                width: 100%;
+                transform: skewX(0deg);
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+.historyDiv {
+    .action {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        //  box-shadow: 0 2px #eee;
+        //    border-bottom: 1px solid grey !important;
+
+        hr {
+            display: inline-block;
+            background-color: #eee;
+            height: 2px;
+            width: inherit;
+            margin: auto;
+            border: none;
+        }
+
+        .btn {
+
+            margin: 20px 0;
+            //    border-radius: 2em;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+        }
+
+        .active {
+            color: $primary-blue !important;
+            background-color: $primary-grey;
+
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .heritage {
+
+
+        .heritageTop {
+            top: 0;
+
+
+            .heritageTop-container {
+                display: block;
+                margin: auto;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                .timelineLogo {
+                    width: 150px;
+                    height: 180px;
+                    margin: auto;
+
+                    img {
+
+                        width: 100% !important;
+                        //  height: 200px;
+                        //z-index: 999999;
+
+                        object-fit: contain;
+                    }
+                }
+
+                .timeLineHeaderDiv {
+                    text-align: center;
+
+                    .timelineHeader {
+                        color: $primary-yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .historyDiv {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        //   grid-gap: 1em;
+
+
+        .history {
+            width: 100%;
+
+
+            .slick-arrow:before {
+                color: rgba(0, 0, 0, 0.42) !important;
+            }
+
+            .yearDescription {
+                width: 80% !important;
+                margin: 0 auto;
+                padding: 30px;
+                transform: skewX(0deg);
+                background-color: rgba($primary-grey, .8);
+
+                & > * {
+                    transform: skewX(0deg);
+                }
+            }
+
+            .two-partitions {
+
+                grid-template-columns: 100%;
+            }
+
+        }
+
+        .action {
+            display: block;
+
+            // flex-flow: wrap;
+            //flex-direction: column;
+            hr {
+                width: 50px;
+                transform: rotate(90deg);
+                margin: 5px auto;
+            }
+
+            .btn {
+                width: 100%;
+
+
+
+
+            }
+        }
+
+    }
+}

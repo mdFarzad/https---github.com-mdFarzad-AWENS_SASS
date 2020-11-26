@@ -1,0 +1,30 @@
+.wei-cover {
+    background-image: url(../../images/wei-cover.png);
+    background-size: cover;
+    background-position: top;
+    height: 80%;
+    padding: 15%;
+    position: relative;
+
+    .wei-logo {
+        position: absolute;
+        top: 85%;
+        left: 80%;
+    }
+
+}
+
+.wei-body {
+
+    &-top,
+    &-mid {
+        margin: 5% auto;
+    }
+
+    &-mid {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+}

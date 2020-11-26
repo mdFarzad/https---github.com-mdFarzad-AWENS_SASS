@@ -1,0 +1,14 @@
+{
+    "name": "awens",
+    "version": "1.0.0",
+    "description": "awens website",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss Custom/css/style.css -w"
+    },
+    "author": "Mohammad Golam Farzad",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.14.1"
+    }
+}

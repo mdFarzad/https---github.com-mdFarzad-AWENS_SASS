@@ -1,0 +1,268 @@
+.apprenticeshipTitleDiv {
+    background-color: red;
+    background-image: url(../../images/apprentice1.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 40vw;
+
+
+
+    .primary-title,
+    .flow-text {
+        padding-left: 5%;
+
+    }
+
+}
+
+.apprenticeship-div-wrapper {
+    position: relative;
+
+    .apprenticeship-div-textDiv {
+        position: absolute;
+        width: 30%;
+        background-color: white;
+        opacity: .9;
+        padding: 5%;
+        top: 30vw;
+        left: 40%;
+
+        .flow-text {
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+
+
+    .acc-img {
+        width: 50%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+
+}
+
+.stepper {
+    .step {
+        .step-content {
+            h5 {
+                //font-size: calc(#{$primary-title-size} * 2);
+            }
+        }
+    }
+}
+
+.tutoring-process {
+
+    .card {
+        height: 30rem;
+
+        .process {
+            .card-tabs {
+                .tabs {
+                    a {
+                        color: $primary-blue;
+
+
+                    }
+
+                    .indicator {
+                        background-color: $primary-blue !important;
+                    }
+
+                }
+
+                .ar {
+                    display: inline-block;
+                    //width: inherit;
+
+                    margin: auto;
+                }
+            }
+
+            .card-content {
+                blockquote {
+                    border-left: 5px solid $primary-blue !important;
+                }
+            }
+        }
+    }
+
+    .action {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+
+        hr {
+            display: inline-block;
+            width: inherit;
+            height: 1px;
+            margin: auto;
+        }
+
+
+        .ar {
+            display: inline-block;
+            // width: inherit;
+
+            margin: auto;
+        }
+
+        a {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            color: $primary-blue;
+            flex-shrink: 1;
+            border: 1px solid grey;
+            border-radius: 50%;
+        }
+    }
+}
+
+.apprenticeship-div-wrapper2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+
+    .acc-img-div {
+        width: 50%;
+
+        .acc-img {
+            width: 100%;
+        }
+    }
+
+    .valign-wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .apprenticeshipTitleDiv {
+
+
+        .primary-title {
+            padding-top: 15%;
+            padding-left: 5%;
+
+        }
+    }
+
+
+
+}
+
+@media(max-width:900px) {
+    .apprenticeshipTitleDiv {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .apprenticeship-div-wrapper {
+        .apprenticeship-div-textDiv {
+            width: 45%;
+            padding: 5%;
+            top: 60vw;
+            left: 30%;
+        }
+
+        .acc-img {
+            width: 70%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+    }
+
+    .tutoring-process {
+
+        .card {
+            height: 100%;
+
+            .process {
+                display: grid;
+                grid-template-columns: 30% 70%;
+
+                .card-tabs {
+                    .tabs {
+                        position: relative;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column !important;
+                        height: 300px;
+
+                        li {
+                            text-align: left;
+                        }
+                    }
+
+                    .ar {
+                        display: none;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .apprenticeshipTitleDiv {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .apprenticeship-div-wrapper {
+        .apprenticeship-div-textDiv {
+            width: 70%;
+            padding: 5%;
+            top: 50vw;
+            left: 25%;
+        }
+
+        .acc-img {
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+    }
+
+    .apprenticeship-div-wrapper2 {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width:350px) {
+    .apprenticeshipTitleDiv {
+        width: 100%;
+        height: 100vw;
+
+
+    }
+
+    .apprenticeship-div-wrapper {
+        .apprenticeship-div-textDiv {
+            width: 70%;
+            padding: 2%;
+            top: 70vw;
+            left: 25%;
+
+
+        }
+
+        .acc-img {
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+    }
+
+}

@@ -1,0 +1,173 @@
+/*******************Footer css******************/
+footer {
+    background-color: $primary-blue;
+
+
+
+    .footer {
+        font-size: $links-size;
+
+
+        .footerTop {
+            padding: 20px;
+
+            .footerTitle {
+                font-size: $footerTitle;
+                font-weight: 300;
+            }
+
+            .footerButton {
+                @include buttonDesign(1em);
+
+                &::after {
+                    @include afterButtonEffect(1em);
+                }
+            }
+        }
+
+
+        .connect {
+            display: none;
+
+            .contact {
+                color: $color-white !important;
+
+                &Info {
+                    color: $primary-yellow;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+
+        hr {
+            margin: 0 50px;
+        }
+
+        .footerMiddle {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+
+
+            .list {
+                color: white !important;
+
+                a {
+                    color: white;
+
+                }
+
+                .listHead {
+                    font-weight: 600;
+                }
+
+                .lists {
+
+                    padding-top: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .exception {
+                    padding-top: 0;
+                }
+            }
+
+            .footerIcons {
+                div {
+                    padding-top: 10px;
+                }
+            }
+
+        }
+
+
+    }
+
+    .locationArrow {
+        margin-top: 20px;
+
+        .LocationArrowDown {
+            display: none;
+        }
+
+        .LocationArrowDown,
+        .LocationArrowUp {
+            animation: arrowDown 2s infinite;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .location {
+        line-height: 0 !important;
+
+        display: none;
+
+        .footerFrame {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .copyright {
+        margin-top: 0;
+        padding: 10px;
+        background-color: $secondary-blue;
+        color: white;
+        font-size: $links-size;
+    }
+}
+
+@media(max-width:600px) {
+    footer {
+        .footer {
+            .footerTop {
+                .footerTitle {
+                    font-size: calc(#{$footerTitle} * .75);
+                    font-weight: 300;
+                }
+            }
+
+            .connect {
+                display: none;
+                color: white;
+
+            }
+
+            .footerMiddle {
+
+                .list {
+                    color: white;
+                    margin-top: 10px;
+                    padding: 10px;
+
+                    .listHead {
+                        font-weight: 400;
+                    }
+
+                    .lists {
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .footerIcons {
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}

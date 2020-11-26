@@ -1,0 +1,468 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Home</title>
+
+     <link rel="icon" href="images/AWENS-logo-small.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <link rel="stylesheet" href="Materialize/css/materialize.min.css" media="screen,projection">
+     <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+     <link rel="stylesheet" type="text/css" href="Custom/css/slick.css" />
+     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+     <link rel="stylesheet" href="Custom/css/style.css" media="screen,projection">
+ </head>
+
+ <body>
+     <!-- BODY SECTION STARTS -->
+     <header>
+         <div class="navbar-fixed">
+             <nav class="navbar-fixed">
+                 <a class="button-collapse right" data-activates="mobile-nav" href="#">
+                     <i class="material-icons">
+                         menu
+                     </i>
+                 </a>
+                 <div class="nav-wrapper">
+                     <a class="brand-logo" href="index.html"><img src="images/AWENS_LOGO_NAME-small.png" class="awensLogo" alt="awens logo"></a>
+
+                     <ul class="right hide-on-med-and-down">
+                         <li>
+                             <a href="workplace_education.html">Workplace Education Initiative</a>
+                         </li>
+
+                         <li>
+                             <a class="dropdown-button click-to-toggle" data-activates="inPerson-us-dropdown" href="#" data-toggle="dropdown">Learning Solutions
+                                 <i class="material-icons right">
+                                     arrow_drop_down
+                                 </i>
+                             </a>
+                             <ul id="inPerson-us-dropdown" class="dropdown-content">
+                                 <li>
+                                     <a href="digital-solutions.html">Digital Education Solutions</a>
+                                 </li>
+                                 <li>
+                                     <a href="instructional-skill-certification.html">Instructional Certifications</a>
+                                 </li>
+                                 <li> <a href="apprentice_tutoring.html">Apprenticeship</a></li>
+                                 <li><a href="training_pipeline.html">Corporate</a></li>
+                             </ul>
+
+                         </li>
+
+                         <li>
+                             <a class="dropdown-button click-to-toggle" data-activates="about-us-dropdown" href="#" data-toggle="dropdown">
+                                 About Us
+                                 <i class="material-icons right">
+                                     arrow_drop_down
+                                 </i>
+                             </a>
+                             <ul id="about-us-dropdown" class="dropdown-content">
+                                 <li><a href="our_mission.html">AWENS Purpose</a></li>
+                                 <li> <a href="our_team.html">Our Team</a></li>
+                                 <li> <a href="our_heritage.html">Our Heritage</a></li>
+                                 <li> <a href="our_reach.html">Our Reach</a></li>
+                                 <li> <a href="become-member.html">AWENS Members</a></li>
+                                 <li> <a href="safety_standards.html">Covid Measures</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a class="btn customizedButton customizedButton-white " href="lets-connect.html" style="width: 80%">Connect</a>
+                         </li>
+
+                     </ul>
+                 </div>
+                 <div id="mobile-nav-wrapper">
+                     <ul class="side-nav right collapsible collapsible-accordion" id="mobile-nav">
+                         <li class="topItem">
+                             <div class="user-view">
+                                 <img src="images/AWENS_LOGO_NAME-trans.png" class="awensLogoMobile">
+                             </div>
+                             <h5 class="center-align">Association of Workplace Educators of Nova Scotia</h5>
+                         </li>
+                         <li>
+                             <a class="white-text left-align" href="workplace_education.html">Workplace Education Initiative</a>
+                         </li>
+
+                         <li>
+                             <a class="collapsible-header white-text side-drop" data-activates="inPerson-us-dropdown-mobile" href="#" data-toggle="dropdown">Learning Solutions
+                                 <i class="material-icons white-text right">
+                                     arrow_drop_down
+                                 </i>
+                             </a>
+                             <div class="collapsible-body">
+                                 <ul id="inPerson-us-dropdown-mobile">
+                                     <li>
+                                         <a href="digital-solutions.html">Digital Education Solutions</a>
+                                     </li>
+                                     <li>
+                                         <a href="instructional-skill-certification.html">Instructional Certifications</a>
+                                     </li>
+                                     <li><a href="training_pipeline.html">Corporate</a></li>
+                                     <li> <a href="apprentice_tutoring.html">Apprenticeship</a></li>
+
+                                 </ul>
+                             </div>
+                         </li>
+
+                         <li>
+                             <a class="collapsible-header white-text side-drop" data-activates="about-us-dropdown-mobile" href="#" data-toggle="dropdown">
+                                 About Us
+                                 <i class="material-icons white-text right">
+                                     arrow_drop_down
+                                 </i>
+                             </a>
+                             <div class="collapsible-body">
+                                 <ul id="about-us-dropdown-mobile">
+                                     <li> <a href="our_mission.html">AWENS Purpose</a></li>
+                                     <li> <a href="our_team.html">Our Team</a></li>
+                                     <li> <a href="our_heritage.html">Our Heritage</a></li>
+                                     <li> <a href="our_reach.html">Our Reach</a></li>
+                                     <li> <a href="become-member.html">AWENS Members</a></li>
+                                     <li> <a href="safety_standards.html">Covid Measures</a></li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a class="btn waves-effect waves-light customizedButton customizedButton-white" href="lets-connect.html">Connect</a>
+                         </li>
+                     </ul>
+                 </div>
+
+             </nav>
+         </div>
+     </header>
+
+     <section id="fixedButton">
+         <div class="fixed-action-btn">
+             <a href="lets-connect.html" class="btn btn-large btn-floating red pulse" style="">
+                 <i class="material-icons">feedback</i>
+             </a>
+         </div>
+     </section>
+     <section id="ourReach">
+         <section class="our-reach-header">
+             <div class="reach-title-head center-align">
+                 <div class="head-group">
+                     <h4 class="primary-title top-title">Community and Global Partnership</h4>
+                     <p class="flow-text reach-title-para1">Nova Scotian Roots</p>
+                     <p class="flow-text reach-title-para2">Global Influence</p>
+                 </div>
+             </div>
+         </section>
+     </section>
+     <!-- BODY SECTION ENDS -->
+     <section id="community">
+         <div class="container">
+             <div class="our-community">
+                 <div class="card z-depth-2">
+                     <div class="card-image">
+                         <img src="images/wei-logo.png" class=" image-rectangle">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="wei">Workplace Education Initiative</span>
+                         <div class="read-more">
+                             <p class="common-para" id="wei-para">AWENS works to support Labour and Advanced Education’s Workplace Education Initiative (WEI). WEI works in partnership with business, industry, and labour to support the development of a skilled and adaptable workforce, improving workplace growth and essential skills and helping businesses manage workplace change. WEI is a nationally recognized program aimed at improving workplace essential skills and managing skills transitions. Many of AWENS members delivered WEI programs to small businesses through full ‘cluster programs’, which are hosted by business associations.</p>
+
+                             <p id="wei-link" style="display: none;">https://novascotia.ca/lae/workplace-education/</p>
+
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('wei')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="images/wei-logo.png" class=" image-rectangle">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="lae">Labour and Advanced Education</span>
+                         <div class="read-more">
+                             <p id="lae-para" class="common-para">AWENS and the Department of Labour and Advanced Education (LAE) have been strategic partners for over 20 years. AWENS instructors strongly support the objectives of the provincial government's Workplace Education Initiative program. Since 1999, AWENS has worked collaboratively with LAE to provide support services (administrative function) to AWENS member instructors and LAE clients.</p>
+                             <p id="lae-link" style="display: none;">https://novascotia.ca/lae/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('lae')">Read More</a>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="images/our-reach/isw.png" class=" image-3">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="isw">ISW Network</span>
+                         <div class="read-more">
+                             <p id="isw-para" class="common-para">AWENS in partnership with higher education institutes across Canada supports the work of a very successful professional development initiative for educators -- the Instructional Skills Workshop (ISW). Since its creation in Canada (1979), hundreds of educators and institutions have adopted ISW as an instructional standard. </p>
+                             <p id="isw-link" style="display: none;">https://www.iswnetwork.ca/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('isw')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="images/our-reach/nsta.png" class=" image-rectangle">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="nsta">Heart NSTA</span>
+                         <div class="read-more">
+                             <p id="nsta-para" class="common-para">Since 2017, AWENS has worked to support management, faculty and staff of the Heart NSTA Institute. AWENS provided instructional skills development that established teaching standards to improve the performance outcomes of the Vocational Training Development Institute.</p>
+                             <p id="nsta-link" style="display: none;">https://www.heart-nsta.org/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('nsta')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="images/our-reach/cuba.png" class=" image-5">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="cuba">CUBA</span>
+                         <div class="read-more">
+                             <p id="cuba-para" class="common-para">Working in partnership with organizations that are supported through the Ministry of Education of Cuba, AWENS has provided digital solutions to transform educational content to a vibrant interactive learning online tool. </p>
+                             <p id="cuba-link" style="display: none;">digital-solutions.html
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('cuba')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+
+                     <div class="card-image">
+                         <div class="im">
+                             <img src="images/our-reach/cienfuego.png" class=" image-6">
+                         </div>
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title center-align" id="cienfuegos">University of Cienfuegos</span>
+                         <div class="read-more">
+                             <p id="cienfuegos-para" class="common-para">Since 2018, AWENS has worked closely with the faculty and management to bring forward new innovative teaching methodologies to foster interactive adult education programs. </p>
+                             <p id="cienfuegos-link" style="display: none;">https://www.ucf.edu.cu/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('cienfuegos')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+
+                     <div class="card-image">
+                         <img src="images/our-reach/nscc.png" class="image-7">
+                     </div>
+
+                     <div class="card-content">
+                         <span class="card-title center-align" id="nscc">NSCC and Digital Nova Scotia</span>
+                         <div class="read-more">
+                             <p id="nscc-para" class="common-para">AWENS partnership with NSCC, and Digital Nova Scotia allowed for training to take place to upskill participants' IT skills. Training included writing code for a variety of software solutions. </p>
+                             <p id="nscc-link" style="display: none;">https://www.nscc.ca/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('nscc')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+
+                     <div class="card-image">
+                         <img src="images/our-reach/engineers.png" class=" image-8">
+                     </div>
+
+                     <div class="card-content">
+                         <span class="card-title center-align" id="engineers">Engineers Nova Scotia</span>
+                         <div class="read-more" class="common-para">
+                             <p id="engineers-para" class="common-para">AWENS has facilitated professional development for Engineers Nova Scotia through the offering of a series of Lunch and Learn sessions. </p>
+                         </div>
+                         <p id="engineers-link" style="display: none;">https://engineersnovascotia.ca/
+                         </p>
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('engineers')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card ">
+
+                     <div class="card-image">
+                         <img src="images/our-reach/bbi.png" class=" image-rectangle">
+                     </div>
+
+                     <div class="card-content">
+                         <span class="card-title center-align" id="bbi">Black Business Initiative</span>
+                         <div class="read-more">
+                             <p id="bbi-para" class="common-para">AWENS supports many industry associations throughout the province by facilitating workspace that supports their training needs.</p>
+                             <p id="bbi-link" style="display: none;">http://www.bbi.ca/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('bbi')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+
+                     <div class="card-image">
+                         <img src="images/our-reach/apprenticeship.png" style="background-color: rgba(0, 0, 0, 0.8)" class=" image-rectangle">
+                     </div>
+
+                     <div class="card-content">
+                         <span class="card-title center-align" id="apprenticeship"> Nova Scotia Apprenticeship Agency</span>
+                         <div class="read-more">
+                             <p id="apprenticeship-para" class="common-para"> AWENS and the Nova Scotia Apprenticeship Agency have partnered on a number of initiatives to support apprentices throughout the province of Nova Scotia. </p>
+                             <p id="apprenticeship-link" style="display: none;">https://nsapprenticeship.ca/
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('apprenticeship')">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card ">
+
+                     <div class="card-image">
+                         <img src="images/our-reach/women.png" class=" image-11">
+                     </div>
+
+                     <div class="card-content">
+                         <span class="card-title center-align" id="women">Women in Business</span>
+                         <div class="read-more">
+                             <p id="women-para" class="common-para">AWENS has participated in Atlantic Canadian trade missions to Cuba, Jamaica, Latin American and Miami. </p>
+                             <p id="women-link" style="display: none;">https://www.centreforwomeninbusiness.ca/en/home/default.aspx
+                             </p>
+                         </div>
+
+                     </div>
+                     <div class="card-action center-align">
+                         <a href="#modal1" class="modal-trigger" onclick="modalTrigger('women')">Read More</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Modal Structure -->
+         <div id="modal1" class="modal">
+             <h4 class="modal-header center-align">Modal Header</h4>
+             <div class="modal-content valign-wrapper">
+                 <!-- <div class="modal-image center-align"><img src="" alt=""></div> -->
+                 <p class="modal-para flow-text">A bunch of text</p>
+
+             </div>
+             <div class="modal-footer">
+                 <div class="btn-group center-align">
+                     <a href="#!" class="modal-close indigo white-text waves-effect waves-white btn-flat">Visit Page</a>
+                     <a href="#!" class="modal-close red white-text waves-effect waves-white btn-flat">Exit</a></div>
+
+             </div>
+         </div>
+     </section>
+     <!-- FOOTER STARTS -->
+     <footer>
+         <div class="footer">
+             <div class="footerTop center-align">
+                 <h4 class="primary-title white-text footerTitle">Begin your Learning Journey</h4>
+                 <a class="btn  customizedButton customizedButton-white footerButton">Connect</a>
+             </div>
+             <hr>
+             <div class="connect  white-text center-align">
+                 <a class="contact white-text" href="tel:+19024067440">Phone:<span class="contactInfo"> +1-902-406-7440</span></a>
+                 <br> <a class="contact white-text" href="mailto:info@awens.ca">Email:<span class="contactInfo"> info@awens.ca</span></a>
+             </div>
+             <div class="footerMiddle">
+                 <div class="list">
+                     <ul>
+                         <h5 class="white-text">About Us</h5>
+                         <li class="lists"><a href="">Our Mission</a></li>
+                         <li class="lists"><a href="">Our Heritage</a></li>
+                         <li class="lists"><a href="">Our Reach</a></li>
+                     </ul>
+                 </div>
+                 <div class="list">
+                     <ul>
+                         <h5 class="white-text">Engage With Us</h5>
+                         <li class="lists"><a href="">Contact Us</a></li>
+                         <li class="lists"><a href="">AWEN'S Members</a></li>
+
+                     </ul>
+                 </div>
+
+                 <div class="list">
+                     <ul>
+                         <h5 class="white-text">Learning Solutions</h5>
+                         <li class="lists"><a href="">Digital Education Solutions</a></li>
+                         <li class="lists"><a href="">Instructional Skills Workshop</a></li>
+                         <li class="lists"><a href="">Apprenticeship</a></li>
+                         <li class="lists"><a href="">Corporate</a></li>
+                     </ul>
+                 </div>
+                 <div class="footerIcons">
+                     <div>
+                         <a href="https://www.facebook.com/AWENSofficial"> <i class="fa fa-facebook" aria-hidden="true" style="color: white;font-size: 48px;padding-right: 3%;"></i></a>
+                     </div>
+                     <div>
+                         <a href="https://twitter.com/AWENS_NS"> <i class="fa fa-twitter" aria-hidden="true" style="color: white;font-size: 48px;padding-right: 3%;"></i></a>
+                     </div>
+                     <div>
+                         <a href="https://www.linkedin.com/company/5367351"><i class="fa fa-linkedin" aria-hidden="true" style="color: white;font-size: 48px;padding-right: 3%;"></i></a>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+         <div class="locationArrow center-align">
+             <p class="white-text center-align"> <span class="material-icons">
+                     location_on
+                 </span>
+                 Location</p>
+             <i class="fa fa-angle-double-down LocationArrowDown white-text"></i>
+             <i class="fa fa-angle-double-up LocationArrowUp white-text"></i>
+
+
+         </div>
+         <div class="location left-align"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.989593245205!2d-63.600466084598324!3d44.6585642790997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a217a7410df51%3A0xcdf3914e97d8aa6!2s2830%20Agricola%20St%2C%20Halifax%2C%20NS%20B3K%204E4!5e0!3m2!1sen!2sca!4v1604508977746!5m2!1sen!2sca" class="footerFrame" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+         <div class="copyright center-align">Copyright<i class="fa fa-copyright" aria-hidden="true"></i>awens.ca</div>
+     </footer>
+     <!-- FOOTER ENDS -->
+
+     <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="Custom/js/mission_jquery.js"></script>
+     <script src="Materialize/js/materialize.min.js"></script>
+     <script src="Custom/js/nav.js"> </script>
+     <script src="Custom/js/digVid.js"></script>
+
+     <script src="Custom/js/modal.js"></script>
+
+     <script src="Custom/js/slider.js"> </script>
+     <script src="Custom/js/carousel.js"> </script>
+     <script type="text/javascript" src="Custom/js/slick.min.js"></script>
+     <script>
+
+     </script>
+
+ </body>
+
+ </html>

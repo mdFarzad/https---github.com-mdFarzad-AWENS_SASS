@@ -1,0 +1,116 @@
+#digitalSolutions {
+    .digital-cover {
+        background-image: url(../../images/digital.png);
+        background-size: cover;
+        background-position: right;
+        position: relative;
+        width: 100%;
+        height: 45vw;
+    }
+
+    .digital-video {
+        .test-knowledge {
+            // videoPointsDesign($bgColor)
+            @include videoPointsDesign(#FFC000);
+        }
+
+        .engage {
+            @include videoPointsDesign(#5999D5);
+        }
+
+        .share-collect {
+            @include videoPointsDesign(#EB7B30);
+        }
+
+        .access {
+            @include videoPointsDesign(#A3A4A4);
+        }
+
+        .online-offline {
+            @include videoPointsDesign(#EB7B30);
+        }
+
+        .test {
+            // videoSideDiv($transition, $animation-delay) 
+            @include videoSideDiv(.4s ease-in, .3s);
+        }
+
+        .eng {
+            // videoSideDiv($transition, $animation-delay) 
+            @include videoSideDiv(.6s ease-in, .5s);
+        }
+
+        .share {
+            // videoSideDiv($transition, $animation-delay) 
+            @include videoSideDiv(.8s ease-in, .7s);
+        }
+
+        .acc {
+            // videoSideDiv($transition, $animation-delay) 
+            @include videoSideDiv(1s ease-in, .9s);
+        }
+
+        .onoff {
+            // videoSideDiv($transition, $animation-delay) 
+            @include videoSideDiv(1.2s ease-in, 1.1s);
+        }
+
+        .video-info {
+            margin-bottom: 10%;
+            position: relative;
+        }
+
+        .video-points {
+            border-radius: 2em;
+            transition: .3s;
+        }
+
+        .video-points:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        }
+
+        .video-points:active {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+        }
+
+        .hidden-para {
+            padding: 5%;
+            display: none;
+        }
+    }
+
+
+}
+
+.digital-bottom {
+    width: 100%;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, .9) 0%,
+            rgba(255, 255, 255, .9) 50%,
+            rgba(255, 0, 0, 0) 50%),
+        url(../../images/dose.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+    height: 100%;
+    background-position: top;
+    margin: 10% auto;
+    object-fit: cover;
+}
+
+.bottom-para {
+    width: 50%;
+    padding: 5%;
+}
+
+@media(max-width: 600px) {
+
+    .bottom-para {
+        .flow-text {
+            font-size: .95rem !important;
+        }
+    }
+
+}

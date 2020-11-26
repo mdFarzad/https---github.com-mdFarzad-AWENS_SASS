@@ -1,0 +1,92 @@
+.membershipTier {
+    display: flex;
+    margin: 0 auto;
+
+    .tier {
+        width: 350px;
+        margin: 10px;
+        border-radius: 3px;
+
+        .collection {
+            border: 1px solid #e0e0e0;
+
+            &-header {
+                background-color: $primary-blue !important;
+                height: 250px;
+            }
+
+            &-item {
+                padding: 20px;
+
+                .subList {
+                    li {
+                        list-style: inside !important;
+                        padding: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+#howtoBecomeMember {
+    .form-link {
+        color: $primary-yellow;
+    }
+
+    .form-fee {
+        color: #9d0b0b;
+        border-right: 5px solid #9d0b0b;
+        border-left: 5px solid #9d0b0b;
+    }
+}
+
+.checkList {
+    ul {
+        li {
+            list-style: inside decimal;
+        }
+    }
+}
+
+@media(max-width:1200px) {
+    .membershipTier {
+        flex-wrap: wrap;
+
+        .tier {
+            width: 300px;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .membershipTier {
+        .tier {
+            width: 300px;
+
+            .collection {
+                &-header {
+                    height: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1600px) {
+    .membershipTier {
+        .tier {
+            width: 600px;
+
+            .collection {
+                &-header {
+                    height: 150px;
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,128 @@
+/********************************************************Nav bar css********************************************************/
+.navbar-fixed {
+    z-index: 999999;
+    max-width: 1900px;
+    background-color: $primary-blue !important;
+
+    &.scrolled {
+        background-color: rgba(black, 0.58) !important;
+
+        &:hover {
+            background-color: $primary-blue !important;
+        }
+    }
+
+    & .nav-wrapper {
+        margin: 0 5rem;
+
+        ul {
+            a {
+                font-size: 1.2rem;
+
+                .flow-text {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .topNav-button {
+            //  @include buttonDesign(0, .2s);
+        }
+
+        & .brand-logo {
+            height: 65px;
+
+            & .awensLogo {
+                width: 65px;
+
+            }
+
+        }
+    }
+
+    & #mobile-nav-wrapper {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .navbar-fixed {
+        .nav-wrapper {
+            & .brand-logo {
+                height: 57px;
+
+                & .awensLogo {
+                    width: 55px;
+
+                }
+
+            }
+        }
+
+
+    }
+}
+
+@media(max-width:1000px) {
+    #sidenav-overlay {
+        position: inherit !important;
+    }
+
+    .navbar-fixed {
+
+        & #mobile-nav-wrapper {
+            display: flex;
+
+            .side-nav {
+                background-color: $primary-blue !important;
+
+                .topItem {
+                    margin-bottom: 50px;
+                }
+
+                li {
+                    a {
+                        padding: 0 16px;
+                        font-size: 1.2rem;
+
+                        .flow-text {
+                            padding-bottom: 0;
+                        }
+                    }
+
+                    h5 {
+                        margin: 0 auto;
+                        color: $primary-yellow;
+                    }
+
+                    .mobileNavButton {
+                        //  @include buttonDesign(0, .2s);
+
+
+                        &:hover {
+                            background-color: $primary-blue;
+                            color: white;
+                            transform: translateY(3px);
+
+                        }
+                    }
+                }
+
+                .user-view {
+                    display: flex;
+
+                    .awensLogoMobile {
+
+                        width: 180px;
+                        height: 200px;
+                        margin: 0 auto;
+                        object-fit: contain;
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}

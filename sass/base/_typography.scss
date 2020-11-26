@@ -1,0 +1,74 @@
+.flow-text {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: $h1-default-size;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        font-size: $h1-default-size;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: $h1-default-size;
+    }
+
+}
+
+.primary-title {
+    font-size: $primary-title-size;
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 1.14rem;
+    letter-spacing: 5px;
+    text-shadow: .5px 0px grey;
+
+}
+
+.top-title {
+    font-size: calc(#{$primary-title-size} * 2 - 1rem);
+}
+
+@media(max-width: 1200px) {
+    .primary-title {
+        font-size: calc(#{$primary-title-size} * 2 - 2.5rem);
+
+    }
+}
+
+@media(max-width: 900px) {
+    .primary-title {
+        font-size: calc(#{$primary-title-size} * 3 - 5rem);
+
+    }
+
+    .top-title {
+        font-size: calc(#{$primary-title-size} * 2 - 1rem);
+    }
+}
+
+@media(max-width:600px) {
+    .primary-title {
+        font-size: calc(#{$primary-title-size} / 1.1);
+
+    }
+
+    .top-title {
+        font-size: calc(#{$primary-title-size} * 2 - 3rem);
+    }
+}
+
+@media(max-width:250px) {
+    .primary-title {
+        font-size: calc(#{$primary-title-size} / 1.5);
+
+    }
+}

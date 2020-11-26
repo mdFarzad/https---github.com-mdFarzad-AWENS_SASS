@@ -1,0 +1,45 @@
+#pillars {
+    .wBoxes {
+        display: flex;
+        flex-wrap: wrap;
+
+        .wBox {
+            background-color: white;
+            width: 17em;
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 10px auto;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            transition: transform .3s;
+
+            &:hover {
+                transform: translateY(-1.5rem) scale(1.03);
+            }
+
+            &-title {
+                font-weight: bold;
+            }
+
+            .flow-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+@media(max-width:1200px) {
+    #pillars {
+        .wBoxes {
+            justify-content: space-between;
+
+            .wBox {
+                width: 300px;
+                height: 30rem;
+
+            }
+        }
+
+    }
+}
