@@ -2,7 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-if(isset($_POST['submit'])){
+if(isset($_POST['firstName']) && ($_POST['email'])){
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
@@ -22,8 +22,8 @@ if(isset($_POST['submit'])){
     $mail-> isSMTP(); 
     $mail->Host = smtp.gmail.com;
      $mail->SMTPAuth = true;
-     $mail->Username ="fzsharad@gmail.com";
-     $mail->Password = "fzsharad";
+     $mail->Username ="mfarad152048@bscse.uiu.ac.bd";
+     $mail->Password = "TomatoSquad1940";
      $mail->Port = 465;
      $mail->SMTPSecure = "ssl";
     
