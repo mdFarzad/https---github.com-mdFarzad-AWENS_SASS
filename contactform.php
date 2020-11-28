@@ -46,6 +46,6 @@ if(isset($_POST['submit'])){
     }
     
     mail( $mailTo, $subject, $txt,  $headers);
-    header("Location: index.php?mailsend");
+    header("Location: lets-connect.html?mailsend");
 }
 ?>
