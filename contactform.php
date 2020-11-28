@@ -29,7 +29,7 @@ if(isset($_POST['firstName']) && ($_POST['email'])){
     
     $mail-> isHTML(true);
     $mail-> setFrom($email,$firstName);
-    $mail-> addAddress("fzsharad@gmail.com");
+    $mail-> addAddress("mfarad152048@bscse.uiu.ac.bd");
     $mail-> Subject = ("$email ($subject)");
     $mail-> Body = $txt;
     
@@ -42,10 +42,8 @@ if(isset($_POST['firstName']) && ($_POST['email'])){
     }
     
     exit(json_encode(array("status" => $status, "response" => $response)));
-    }
+    
     }
     
-    mail( $mailTo, $subject, $txt,  $headers);
-    header("Location: lets-connect.html?mailsend");
-}
+   
 ?>
