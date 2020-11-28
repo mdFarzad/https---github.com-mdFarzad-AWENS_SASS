@@ -163,7 +163,8 @@
                 <div class="feedback left-align">
                     <h4 class="center-align primary-blue-text">Contact us</h4>
                     <div class="row">
-                        <form class="col s12" action="contactform.php" method="post">
+                        <h4 class="sent-notification"></h4>
+                        <form id="myForm" class="col s12" action="contactform.php" method="post">
                             <div class="row">
                                 <div class="input-field col s6 m6 l6 ">
                                     <input id="first_name" name="firstName" type="text" class="validate">
@@ -182,7 +183,7 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s12 m12 l12 ">
-                                    <input id="first_name" name="subject" type="text" class="validate">
+                                    <input id="subject" name="subject" type="text" class="validate">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
@@ -196,7 +197,7 @@
                             </div>
 
                             <div class="right-align">
-                                <a href="" class="btn customizedButton customizedButton-blue" type="submit" name="submit">Send <i class="material-icons right">send</i></a>
+                                <a class="btn customizedButton customizedButton-blue" type="submit" name="submit" onclick="sendEmail()">Send <i class="material-icons right">send</i></a>
 
                             </div>
 

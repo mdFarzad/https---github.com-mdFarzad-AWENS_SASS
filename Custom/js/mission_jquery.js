@@ -73,3 +73,40 @@ $("#pipe4").click(function () {
     $(".issuing_rfp_list_ul").slideUp();
 
 });
+
+function sendEmail() {
+    let name = $("#firstName");
+    let email = $("#email");
+    let subject = $("#subject");
+    let body = $("#textarea1");
+
+    if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+
+        $.ajax({
+            url: 'sendEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+                name: name.val(),
+                email: email.val(),
+                subject: subject.val(),
+                body: body.val()
+            },
+            success: function (response) {
+                $('#myForm')[0].reset;
+                $('.sent-notification').text('Message Sent Successfully!');
+
+            }
+        })
+    }
+}
+
+function isNotEmpty(caller) {
+    if (caller.val() == "") {
+        caller.css('border', '1px slid red');
+        return false;
+    } else {
+        caller.css('border', '');
+        return true;
+    }
+}
